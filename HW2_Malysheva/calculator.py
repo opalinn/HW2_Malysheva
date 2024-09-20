@@ -10,13 +10,27 @@ def main(string):
     return dividing()
   else:
     print('Что-то не так с введенными данными, проверь!')
-def summation(st):
-    ans=float(st[0])+float(st[2])
+
+def summation(for_calculating):
+    ans=float(for_calculating[0])+float(for_calculating[2])
     return ans
+  
+def is_float(n: str) -> bool:
+     try:
+         float(n)
+         return True
+     except ValueError:
+         return False
+      
+def summation():
+  pass
+
 def substraction():
   pass
+
 def multiplication():
   pass
+
 def dividing():
   pass
 
