@@ -24,14 +24,13 @@ def multiplication():
     pass
 
 
-def dividing():
-    elements = string.split()
-    num1 = float(elements[0])
-    num2 = float(elements[2])
-    if num2 == 0:
-        return "Ошибка: деление на ноль."
-    return num1 / num2
-
+def divide(for_calculating):
+    operand1 = float(for_calculating[0])
+    operand2 = float(for_calculating[1])
+    if operand2 == 0:
+        return "Ошибка: Деление на ноль"
+    result = operand1 / operand2
+    return result
 
 string = input("Введите математическую операцию: ")
 print(main(string))
