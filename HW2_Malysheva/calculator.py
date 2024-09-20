@@ -7,7 +7,7 @@ def main(string):
     elif "*" in for_calculating:
         return multiplication()
     elif "/" in for_calculating:
-        return dividing()
+        return dividing(for_calculating)
     else:
         print("Что-то не так с введенными данными, проверь!")
 
@@ -24,9 +24,9 @@ def multiplication():
     pass
 
 
-def divide(for_calculating):
+def dividing(for_calculating):
     operand1 = float(for_calculating[0])
-    operand2 = float(for_calculating[1])
+    operand2 = float(for_calculating[2])
     if operand2 == 0:
         return "Ошибка: Деление на ноль"
     result = operand1 / operand2
