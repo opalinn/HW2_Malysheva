@@ -10,21 +10,10 @@ def main(string):
     return dividing()
   else:
     print('Что-то не так с введенными данными, проверь!')
-def is_float(n: str) -> bool:
-     try:
-         float(n)
-         return True
-     except ValueError:
-         return False
 def summation():
   pass
 def substraction():
-  numbers = []
-  x = string.split()
-  for i in x:
-    if i.isnumeric() or is_float(i):
-        numbers.append(float(i))
-  return(numbers[0] - numbers[1])
+  pass
 def multiplication():
   pass
 def dividing():
