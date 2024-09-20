@@ -1,7 +1,7 @@
 def main(string):
   for_calculating = string.split()
   if '+' in for_calculating:
-    return summation()
+    return summation(for_calculating)
   elif '-' in for_calculating:
     return substraction()
   elif '*' in for_calculating:
@@ -10,8 +10,9 @@ def main(string):
     return dividing()
   else:
     print('Что-то не так с введенными данными, проверь!')
-def summation():
-  pass
+def summation(st):
+    ans=float(st[0])+float(st[2])
+    return ans
 def substraction():
   pass
 def multiplication():
