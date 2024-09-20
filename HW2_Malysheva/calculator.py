@@ -1,11 +1,11 @@
 def main(string):
     for_calculating = string.split()
     if "+" in for_calculating:
-        return summation()
+        return summation(for_calculating)
     elif "-" in for_calculating:
-        return substraction()
+        return substraction(for_calculating)
     elif "*" in for_calculating:
-        return multiplication()
+        return multiplication(for_calculating)
     elif "/" in for_calculating:
         return dividing(for_calculating)
     else:
