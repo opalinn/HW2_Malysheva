@@ -3,7 +3,7 @@ def main(string):
   if '+' in for_calculating:
     return summation()
   elif '-' in for_calculating:
-    return substraction()
+    return subtraction(for_calculating)
   elif '*' in for_calculating:
     return multiplication()
   elif '/' in for_calculating:
@@ -18,10 +18,9 @@ def is_float(n: str) -> bool:
          return False
 def summation():
   pass
-def substraction():
+def subtraction(st):
   numbers = []
-  x = string.split()
-  for i in x:
+  for i in st:
     if i.isnumeric() or is_float(i):
         numbers.append(float(i))
   return(numbers[0] - numbers[1])
