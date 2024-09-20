@@ -1,15 +1,23 @@
 def main(string):
-  for_calculating = string.split() 
-  if '+' in for_calculating:
-    return summation(for_calculating)
-  elif '-' in for_calculating:
-    return subtraction(for_calculating)
-  elif '*' in for_calculating:
-    return multiplication(for_calculating)
-  elif '/' in for_calculating:
-    return dividing()
-  else:
-    print('Что-то не так с введенными данными, проверь!')
+    for_calculating = string.split()
+    if "+" in for_calculating:
+        return summation()
+    elif "-" in for_calculating:
+        return substraction()
+    elif "*" in for_calculating:
+        return multiplication()
+    elif "/" in for_calculating:
+        return dividing(for_calculating)
+    else:
+        print("Что-то не так с введенными данными, проверь!")
+
+def dividing(for_calculating):
+    operand1 = float(for_calculating[0])
+    operand2 = float(for_calculating[2])
+    if operand2 == 0:
+        return "Ошибка: Деление на ноль"
+    result = operand1 / operand2
+    return result
 
 def summation(for_calculating):
     ans=float(for_calculating[0])+float(for_calculating[2])
@@ -35,9 +43,5 @@ def subtraction(for_calculating):
         numbers.append(float(i))
   return(numbers[0] - numbers[1])
 
-def dividing():
-  pass
-
-string = input('Введите математическую операцию: ')
+string = input("Введите математическую операцию: ")
 print(main(string))
-
